@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width"/>
+	<title>Mailable</title>
+	<style type="text/css">
+			/*////// RESET STYLES //////*/
+		body{height:100% !important; margin:0; padding:0; width:100% !important;}
+		table{border-collapse:separate;}
+		img, a img{border:0; outline:none; text-decoration:none;}
+		h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+		p{margin: 1em 0;}
+
+		/*////// CLIENT-SPECIFIC STYLES //////*/
+		.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;}
+		table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+		#outlook a{padding:0;}
+		img{-ms-interpolation-mode: bicubic;}
+		body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+			
+		/*////// GENERAL STYLES //////*/
+		img{ max-width: 100%; height: auto; }
+
+		/*////// TABLET STYLES //////*/
+		@media only screen and (max-width: 620px) {
+		.shrink_font{
+			font-size: 62px;
+		}
+		/*////// GENERAL STYLES //////*/
+			#foxeslab-email .table1 { width: 90% !important;}
+			#foxeslab-email .table1-2 { width: 98% !important; margin-left: 1%; margin-right: 1%;}
+			#foxeslab-email .table1-3 { width: 98% !important; margin-left: 1%; margin-right: 1%;}
+			#foxeslab-email .table1-4 { width: 98% !important; margin-left: 1%; margin-right: 1%;}
+			#foxeslab-email .table1-5 { width: 90% !important; margin-left: 5%; margin-right: 5%;}
+
+			#foxeslab-email .tablet_no_float { clear: both; width: 100% !important; margin: 0 auto !important; text-align: center !important; }
+			#foxeslab-email .tablet_wise_float { clear: both; float: none !important; width: auto !important; margin: 0 auto !important; text-align: center !important; }
+
+			#foxeslab-email .tablet_hide { display: none !important; }
+
+			#foxeslab-email .image1 { width: 98% !important; }
+			#foxeslab-email .image1-290 { width: 100% !important; max-width: 290px !important; }
+
+			.center_content{ text-align: center !important; }
+			.center_image{ margin: 0 auto !important; }
+			.center_button{ width: 50% !important;margin-left: 25% !important;max-width: 250px !important; }
+			.centerize{margin: 0 auto !important;}
+		}
+
+	
+		/*////// MOBILE STYLES //////*/
+		@media only screen and (max-width: 480px){
+			.shrink_font{
+				font-size: 48px;
+			}
+			.safe_color{
+				color: #6a1b9a !important;
+			}
+			/*////// CLIENT-SPECIFIC STYLES //////*/
+			body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+			table[class="flexibleContainer"]{ width: 100% !important; }/* to prevent Yahoo Mail from rendering media query styles on desktop */
+
+			/*////// GENERAL STYLES //////*/
+			img[class="flexibleImage"]{height:auto !important; width:100% !important;}
+
+			#foxeslab-email .table1 { width: 98% !important; }
+			#foxeslab-email .no_float { clear: both; width: 100% !important; margin: 0 auto !important; text-align: center !important; }
+			#foxeslab-email .wise_float {	clear: both;	float: none !important;	width: auto !important;	margin: 0 auto !important;	text-align: center !important;	}
+
+			#foxeslab-email .mobile_hide { display: none !important; }
+			.auto_height{height: auto !important;}
+		}
+	</style>
+</head>
+<body style="padding: 0;margin: 0;" id="foxeslab-email">
+
+<!-- section-1 "navbar" -->
+<table class="table_full editable-bg-color bg_color_512da8 editable-bg-image" bgcolor="#512da8"  width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0" style="background-image: url(http://emails.castellab.com/firemail/images/01-bg-1.jpg); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="http://emails.castellab.com/firemail/images/01-bg-1.jpg">
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0">
+				<tr><td height="30"></td></tr>
+				<tr>
+					<td>
+						<!-- Logo -->
+						<table class="no_float" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="editable-img" align="center">
+											<a href="#" class="text_color_ffffff" style="text-decoration: none; color: #ffffff;">Mailable</a>
+								</td>
+							</tr>
+							<tr><td height="30"></td></tr>
+						</table><!-- END logo -->
+
+						<!-- Nav menu -->
+						<table class="no_float" width="" align="right" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<!-- Home -->
+								<td mc:edit="text101" class="text_color_ffffff" style="color: #ffffff; font-size: 14px; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text">
+										<span class="text_container">
+											<a href="#" class="text_color_ffffff" style="text-decoration: none; color: #ffffff;">Home</a>
+										</span>
+									</div>
+								</td>
+								<td width="50"></td>
+								<!-- Work -->
+								<td mc:edit="text102" class="text_color_ffffff" style="color: #ffffff; font-size: 14px; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text">
+										<span class="text_container">
+											<a href="https://blog.theostrich.eu.org/" class="text_color_ffffff" style="text-decoration: none; color: #ffffff;">Blog</a>
+										</span>
+									</div>
+								</td>
+								<td width="50"></td>
+								<!-- Contact -->
+								<td mc:edit="text103" class="text_color_ffffff" style="color: #ffffff; font-size: 14px; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text">
+										<span class="text_container">
+											<a href="https://telegram.dog/theostrich/" class="text_color_ffffff" style="text-decoration: none; color: #ffffff;">Telegram</a>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr><td height="30"></td></tr>
+						</table><!-- END nav menu -->
+					</td>
+				</tr>
+				<!-- horizontal gap -->
+				<tr><td height="100"></td></tr>
+
+				<!-- text -->
+				<tr>
+					<td>
+						<table class="table1" width="460" align="center" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<table height="100" align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 200px;">
+										<tr>
+											<td valign="middle" class="editable-img" align="right">
+												<div style="border-style: none !important; display: block; border: 0 !important;">
+													<img editable="true" mc:edit="image102" src="http://emails.castellab.com/firemail/images/01-icon-gair-1.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+												</div>
+											</td>
+											<td width="20"></td>
+											<td valign="middle" class="editable-img" align="center">
+												<div style="border-style: none !important; display: block; border: 0 !important;">
+													<img editable="true" mc:edit="image103" src="http://emails.castellab.com/firemail/images/01-icon-gair-2.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+												</div>
+											</td>
+											<td width="20"></td>
+											<td valign="middle" class="editable-img" align="left">
+												<div style="border-style: none !important; display: block; border: 0 !important;">
+													<img editable="true" mc:edit="image104" src="http://emails.castellab.com/firemail/images/01-icon-gair-1.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- horizontal gap -->
+							<tr><td height="20"></td></tr>
+							<tr>
+								<td mc:edit="text105" align="center" class="text_color_ffffff" style="color: #ffffff;letter-spacing: 3px; font-size: 36px;line-height: 1.8;font-weight: 700; font-family: 'Open Sans', verdana, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text">
+										<span class="text_container"> <span style="color:#ce93d8;">MAILABLE</span> BOT</span>
+									</div>
+								</td>
+							</tr>
+							<!-- horizontal gap -->
+							<tr><td height="20"></td></tr>
+							<tr>
+								<td mc:edit="text105" align="center" class="text_color_ffffff" style="color: #ffffff;line-height: 2;letter-spacing: 2px; font-size: 12px;font-weight: 500; font-family: 'Open Sans', verdana, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text" style="line-height: 2;">
+										<span class="text_container">SEND & RECEIVE MAILS</span>
+									</div>
+								</td>
+							</tr>
+							<!-- horizontal gap -->
+							<tr><td height="30"></td></tr>
+							<tr>
+								<td>
+									<table class="button_bg_color_ffffff bg_color_ffffff" bgcolor="#ffffff" width="135" height="30" align="center" border="0" cellpadding="0" cellspacing="0" style="border-radius:25px; border-collapse: separate">
+										<tr>
+											<td mc:edit="text106"  class="text_color_512da8" align="center" valign="middle" style="color: #512da8; font-size: 11px; font-weight: 600; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">
+														<a href="https://telegram.dog/mailableBot" class="text_color_512da8" style="text-decoration: none; color: #512da8;">GET STARTED</a>
+													</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr><!-- END text -->
+				<!-- padding-bottom -->
+				<tr><td height="150"></td></tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+</table><!-- END wrapper -->
+
+	<!-- separator -->
+
+<!-- section-2-2 -->
+
+
+
+<!-- section-3 -->
+<table class="table_full editable-bg-color bg_color_6a1b9a editable-bg-image" bgcolor="#6a1b9a" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<!-- padding-top -->
+				<tr><td height="60"></td></tr>
+				<tr>
+					<td>
+						<!-- column-1  -->
+						<table class="table1-2" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td mc:edit="text301" align="center" class="text_color_ffffff" style="line-height: 1.5;letter-spacing: 1px;color: #ffffff; font-size: 16px; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+									<div class="editable-text">
+										<span class="text_container">KEY FEATURES</span>
+									</div>
+								</td>
+							</tr>
+							<!-- horizontal gap -->
+					
+
+						</table><!-- END column-1 -->
+					</td>
+				</tr>
+				<!-- padding-top -->
+				<tr><td height="60"></td></tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+</table><!-- END wrapper -->
+
+<!-- section-4-1 -->
+<table class="table_full editable-bg-color bg_color_ffffff editable-bg-image" bgcolor="#ffffff" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	
+							<!-- margin-bottom -->
+							<tr><td height="15"></td></tr>
+						</table><!-- END column-2 -->
+					</td>
+				</tr>
+				<!-- horizontal gap-->
+				<tr><td height="45"></td></tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+
+	<!-- separator -->
+	<tr>
+		<td>
+			<table width="600" align="center" class="table1" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="1" bgcolor="#ebebeb"></td></tr>
+			</table>
+		</td>
+	</tr><!-- END separator -->
+</table><!-- END wrapper -->
+
+
+
+<!-- section-7 -->
+<table class="table_full editable-bg-color bg_color_f9f9f9 editable-bg-image" bgcolor="#f9f9f9" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="border-bottom: 1px solid #ececec;background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+
+
+
+	
+
+	<!-- row-1 -->
+	
+	<!-- horizontal separator -->
+	<tr>
+		<td>
+			<!-- vertical separator -->
+			<table class="tablet_hide" width="100%" height="1" border="0" cellspacing="0" cellpadding="0" align="left">
+				<tr><td height="100%" bgcolor="#eeeeee"></td></tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- row-2 -->
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<!-- row-1 -->
+				<tr>
+					<td>
+						<!-- column-1  -->
+						<table class="table1-3 auto_height" height="255" width="190" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 50px 0;">
+									<table class="table1-2" align="left" width="160" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;">
+													<tr>
+														<td align="center">
+															<!-- image -->
+															<div style="border-style: none !important; display: block; border: 0 !important;" class="editable-img">
+																<img editable="true" mc:edit="image704" src="http://emails.castellab.com/firemail/images/01-icon-selfie.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="20"></td></tr>
+
+													<tr>
+														<td mc:edit="text707" align="center" class="text_color_242a33" style="color: #242a33; font-size: 11px; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text">
+																<span class="text_container">FREQUENT UPDATE</span>
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="15"></td></tr>
+
+													<tr>
+														<td mc:edit="text708" align="center" class="text_color_7B7B7B" style="color: #7B7B7B; font-size: 11px;line-height: 1.6; font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text" style="line-height: 2;">
+																<span class="text_container">The service undergoes frequent updates.</span>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+
+									<!-- padding-right -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-1 -->
+
+						<table class="tablet_hide" width="1" height="255" border="0" cellspacing="0" cellpadding="0" align="left">
+							<tr><td height="100%" bgcolor="#eeeeee"></td></tr>
+						</table>
+
+						<!-- column-2  -->
+						<table class="table1-3 auto_height" height="255" width="218" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 50px 0;">
+									<!-- padding-left -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+
+									<!-- content -->
+									<table class="table1-2" align="left" width="158" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;">
+													<tr>
+														<td align="center">
+															<!-- image -->
+															<div style="border-style: none !important; display: block; border: 0 !important;" class="editable-img">
+																<img editable="true" mc:edit="image705" src="http://emails.castellab.com/firemail/images/01-icon-suitcase.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="20"></td></tr>
+
+													<tr>
+														<td mc:edit="text709" align="center" class="text_color_242a33" style="color: #242a33; font-size: 11px; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text">
+																<span class="text_container">Easy to Use</span>
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="15"></td></tr>
+
+													<tr>
+														<td mc:edit="text710" align="center" class="text_color_7B7B7B" style="color: #7B7B7B; font-size: 11px;line-height: 1.6; font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text" style="line-height: 2;">
+																<span class="text_container">Anyone can send receive mail easily.</span>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+
+									<!-- padding-right -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-2 -->
+						
+						<!-- vertical separator -->
+						<table class="tablet_hide" width="1" height="255" border="0" cellspacing="0" cellpadding="0" align="left">
+							<tr><td height="100%" bgcolor="#eeeeee"></td></tr>
+						</table>
+
+						<!-- column-3  -->
+						<table class="table1-3 auto_height" height="255" width="190" align="right" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 50px 0;">
+									<!-- padding-left -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+
+									<!-- content -->
+									<table class="table1-2" align="left" width="160" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;">													
+													<tr>
+														<td align="center">
+															<!-- image -->
+															<div style="border-style: none !important; display: block; border: 0 !important;" class="editable-img">
+																<img editable="true" mc:edit="image706" src="http://emails.castellab.com/firemail/images/01-icon-laser-beam.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="20"></td></tr>
+
+													<tr>
+														<td mc:edit="text711" align="center" class="text_color_242a33" style="color: #242a33; font-size: 11px; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text">
+																<span class="text_container">Secure</span>
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="15"></td></tr>
+
+													<tr>
+														<td mc:edit="text712" align="center" class="text_color_7B7B7B" style="color: #7B7B7B; font-size: 11px;line-height: 1.6; font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text" style="line-height: 2;">
+																<span class="text_container">We work the most to secure your private mails.</span>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-3 -->
+					</td>
+				</tr><!-- END row-1 -->
+			</table><!-- END container -->
+		</td>
+	</tr><!-- END row-2 -->
+
+	<!-- horizontal separator -->
+	<tr>
+		<td>
+			<!-- vertical separator -->
+			<table class="tablet_hide" width="100%" height="1" border="0" cellspacing="0" cellpadding="0" align="left">
+				<tr><td height="100%" bgcolor="#eeeeee"></td></tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- row-3 -->
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<!-- row-1 -->
+				<tr>
+					<td>
+						<!-- column-1  -->
+						<table class="table1-3 auto_height" height="255" width="190" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 50px 0;">
+									<table class="table1-2" align="left" width="160" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;">										
+													<tr>
+														<td align="center">
+															<!-- image -->
+															<div style="border-style: none !important; display: block; border: 0 !important;" class="editable-img">
+																<img editable="true" mc:edit="image707" src="http://emails.castellab.com/firemail/images/01-icon-trangia-stove.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="20"></td></tr>
+
+													<tr>
+														<td mc:edit="text713" align="center" class="text_color_242a33" style="color: #242a33; font-size: 11px; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text">
+																<span class="text_container">No logs</span>
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="15"></td></tr>
+
+													<tr>
+														<td mc:edit="text714" align="center" class="text_color_7B7B7B" style="color: #7B7B7B; font-size: 11px;line-height: 1.6; font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text" style="line-height: 2;">
+																<span class="text_container">We don't save your mails.</span>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+
+									<!-- padding-right -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-1 -->
+
+						<table class="tablet_hide" width="1" height="255" border="0" cellspacing="0" cellpadding="0" align="left">
+							<tr><td height="100%" bgcolor="#eeeeee"></td></tr>
+						</table>
+
+						<!-- column-2  -->
+						<table class="table1-3 auto_height" height="255" width="218" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 50px 0;">
+									<!-- padding-left -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+
+									<!-- content -->
+									<table class="table1-2" align="left" width="158" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;">
+													<tr>
+														<td align="center">
+															<!-- image -->
+															<div style="border-style: none !important; display: block; border: 0 !important;" class="editable-img">
+																<img editable="true" mc:edit="image708" src="http://emails.castellab.com/firemail/images/01-icon-cave.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="" />
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="20"></td></tr>
+
+													<tr>
+														<td mc:edit="text715" align="center" class="text_color_242a33" style="color: #242a33; font-size: 11px; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text">
+																<span class="text_container">Freemium</span>
+															</div>
+														</td>
+													</tr>
+													<!-- horizontal gap -->
+													<tr><td height="15"></td></tr>
+
+													<tr>
+														<td mc:edit="text716" align="center" class="text_color_7B7B7B" style="color: #7B7B7B; font-size: 11px;line-height: 1.6; font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+															<div class="editable-text" style="line-height: 2;">
+																<span class="text_container">Use this service free forever.</span>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+
+									<!-- padding-right -->
+									<table class="tablet_hide" width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+										<tr><td height="1"></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-2 -->
+			
+<!-- section-8-1 -->
+<table class="table_full editable-bg-color bg_color_ffffff editable-bg-image" bgcolor="#ffffff" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+
+
+
+
+
+
+	
+
+<!-- section-10-1 -->
+<table class="table_full editable-bg-color bg_color_ffffff editable-bg-image" bgcolor="#ffffff" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<!-- padding-top -->
+
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<tr>
+		
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- margin-bottom -->
+				
+						</table><!-- END column-1 -->
+
+						<!-- vertical gap -->
+						<table class="tablet_hide" width="20" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr><td height="1"></td></tr>
+						</table>
+
+	<!-- separator -->
+	<tr>
+		<td>
+			<table width="600" align="center" class="table1" border="0" cellpadding="0" cellspacing="0">
+				<tr><td height="1" bgcolor="#ebebeb"></td></tr>
+			</table>
+		</td>
+	</tr><!-- END separator -->
+</table><!-- END wrapper -->
+
+<!-- section-2-1 -->
+<table class="table_full editable-bg-color bg_color_ffffff editable-bg-image" bgcolor="#ffffff" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<!-- padding-top -->
+				<tr><td height="60"></td></tr>
+				<tr>
+					<td>
+						<!-- column-1  -->
+						<table class="table1-2" width="190" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding-left: 20px;border-left: 1px solid #ebebeb;">
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 200px;">										
+										<tr>
+											<td mc:edit="text201" align="left" class="center_content text_color_242a33" style="color: #242a33; font-size: 24px;line-height: 1.4; font-weight: 700; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text" style="line-height: 1.4;">
+													<span class="text_container">ABOUT <br>THE OSTRICH</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- margin-bottom -->
+							<tr><td height="10"></td></tr>
+						</table><!-- END column-1 -->
+
+						<!-- vertical gap -->
+						<table class="tablet_hide" width="20" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr><td height="1"></td></tr>
+						</table>
+
+						<!-- column-2  -->
+						<table class="table1-2" width="390" align="right" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 390;">										
+										<tr>
+											<td mc:edit="text202" align="left" class="center_content text_color_242a33" style="color: #242a33; font-size: 12px;line-height: 1.8; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text" style="line-height: 1.8;">
+													<span class="text_container"></span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- margin-bottom -->
+							<tr><td height="10"></td></tr>
+						</table><!-- END column-2 -->
+					</td>
+				</tr>
+				<!-- horizontal gap -->
+				<tr><td height="15"></td></tr>
+				<tr>
+					<td>
+						<!-- column-1  -->
+						<table class="table1-2" width="390" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 390;">
+										<tr>
+											<td mc:edit="text203" align="left" class="center_content text_color_242a33" style="color: #242a33; font-size: 12px;line-height: 1.8; font-weight: 500; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text" style="line-height: 1.8;">
+													<span class="text_container"> The Ostrich is a small open source project made for sharing some basic knowledge/ideas of coding with some working examples.</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- margin-bottom -->
+							<tr><td height="10"></td></tr>
+						</table><!-- END column-1 -->
+
+						<!-- vertical gap -->
+						<table class="tablet_hide" width="20" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr><td height="1"></td></tr>
+						</table>
+
+						<!-- column-2  -->
+						<table class="table1-2" width="190" align="right" border="0" cellspacing="0" cellpadding="0">
+							<!-- padding-top -->
+							<tr><td height="15"></td></tr>
+
+							<tr>
+								<td valign="middle">
+									<table class="button_bg_color_512da8 bg_color_512da8 center_button" bgcolor="#512da8" width="135" height="30" align="center" border="0" cellpadding="0" cellspacing="0" style="border-radius:25px;border-collapse:separate;">
+										<tr>
+											<td mc:edit="text204"  class="text_color_ffffff" align="center" valign="middle" style="color: #ffffff; font-size: 11px; font-weight: 600; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container"><a href="https://telegram.dog/theostrich/" class="text_color_ffffff" style="text-decoration: none; color: #ffffff;">KNOW MORE</a></span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- margin-bottom -->
+							<tr><td height="15"></td></tr>
+						</table><!-- END column-2 -->
+					</td>
+				</tr>
+				<!-- padding-bottom -->
+				<tr><td height="45"></td></tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+
+<!-- section-10-2 -->
+<table class="table_full editable-bg-color bg_color_ffffff editable-bg-image" bgcolor="#ffffff" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="border-bottom: 1px solid #ebebeb;background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<!-- padding-top -->
+	
+
+<!-- section-11 -->
+<table class="table_full editable-bg-color bg_color_6a1b9a editable-bg-image" bgcolor="#6a1b9a" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	
+
+
+
+<!-- section-12 -->
+<table class="table_full editable-bg-color bg_color_2c2c2c editable-bg-image" bgcolor="#2c2c2c" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<tr>
+					<td>
+				
+					
+						
+						<!-- column-4  -->
+						<table class="table1-4" width="150" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 60px 0;border-top: 1px solid #f57c00;border-bottom: 1px solid #f57c00;">
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 200px;">		
+										<tr>
+											<td mc:edit="text1207" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 24px; font-weight: 600; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">5485</span>
+												</div>
+											</td>
+										</tr>
+										<!-- horizontal gap -->
+										<tr><td height="15"></td></tr>
+										<tr>
+											<td mc:edit="text1208" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 11px;font-style: italic; font-weight: 400; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">USERS</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-4 -->
+
+            <!-- column-4  -->
+						<table class="table1-4" width="150" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 60px 0;border-top: 1px solid #f57c00;border-bottom: 1px solid #f57c00;">
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 200px;">		
+										<tr>
+											<td mc:edit="text1207" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 24px; font-weight: 600; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">5485</span>
+												</div>
+											</td>
+										</tr>
+										<!-- horizontal gap -->
+										<tr><td height="15"></td></tr>
+										<tr>
+											<td mc:edit="text1208" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 11px;font-style: italic; font-weight: 400; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">MAILS SENT</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-4 -->
+
+
+            <!-- column-4  -->
+						<table class="table1-4" width="150" align="left" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 60px 0;border-top: 1px solid #f57c00;border-bottom: 1px solid #f57c00;">
+									<table align="center" border="0" cellspacing="0" cellpadding="0" style="max-width: 200px;">		
+										<tr>
+											<td mc:edit="text1207" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 24px; font-weight: 600; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">5485</span>
+												</div>
+											</td>
+										</tr>
+										<!-- horizontal gap -->
+										<tr><td height="15"></td></tr>
+										<tr>
+											<td mc:edit="text1208" align="center" class="text_color_ffffff" style="color: #ffffff; font-size: 11px;font-style: italic; font-weight: 400; font-family: Raleway, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+												<div class="editable-text">
+													<span class="text_container">MAILS RECEIVED</span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table><!-- END column-4 -->
+					</td>
+				</tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+</table><!-- END wrapper -->
+
+
+<!-- section-14 -->
+<table class="table_full editable-bg-color bg_color_f9f9f9 editable-bg-image" bgcolor="#f9f9f9" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="border-bottom: 1px solid #d7d7d7;background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<!-- padding-top -->
+				<tr><td height="60"></td></tr>
+				<tr>
+					<td class="editable-img" align="center">
+						<a href="#">
+							<img editable="true" mc:edit="image1401" src="http://emails.castellab.com/firemail/images/01-logo-2.png" style="display:block; line-height:0; font-size:0; border:0;" border="0" alt="image" />
+						</a>
+					</td>
+				</tr>
+				<!-- horizontal gap -->
+				<tr><td height="20"></td></tr>
+
+				<tr>
+					<td mc:edit="text1401" align="center" class="text_color_512da8" style="color: #512da8; font-size: 24px; font-weight: 900; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+						<div class="editable-text">
+							<span class="text_container">
+								<a href="#" class="text_color_512da8" style="text-decoration: none; color: #512da8;">Mailable</a>
+							</span>
+						</div>
+					</td>
+				</tr>
+				<!-- horizontal gap -->
+				<tr><td height="20"></td></tr>
+
+				<tr>
+					<td mc:edit="text1402" align="center" class="text_color_282828" style="color: #282828; font-size: 14px;line-height: 2;font-style: italic;font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+						<div class="editable-text">
+
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td mc:edit="text1403" align="center" class="text_color_282828" style="color: #282828; font-size: 14px;line-height: 2;font-style: italic;font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+						<div class="editable-text">
+							<span class="text_container">quantum@theostrich.eu.org</span>
+						</div>
+					</td>
+				</tr>
+				<!-- horizontal gap -->
+				<tr><td height="45"></td></tr>
+				
+				<tr>
+					<td mc:edit="text1404" align="center" class="text_color_282828" style="color: #282828; font-size: 14px;line-height: 2;font-style: italic;font-weight: 400; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+						<div class="editable-text">
+
+						</div>
+					</td>
+				</tr>
+				<!-- padding-bottom -->
+				<tr><td height="60"></td></tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+</table><!-- END wrapper -->
+
+<!-- section-15 -->
+<table class="table_full editable-bg-color bg_color_ebebeb editable-bg-image" bgcolor="#ebebeb" width="100%" align="center"  mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"  style="background-image: url(#); background-position: top center; background-repeat: no-repeat; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" background="#">
+	<!-- padding-top -->
+	<tr><td height="30"></td></tr>
+	<tr>
+		<td>
+			<table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+				<tr>
+					<td mc:edit="text1501" align="center" class="text_color_282828" style="color: #282828; font-size: 14px;line-height: 2;font-style: italic;font-weight: 600; font-family: 'Open Sans', Helvetica, sans-serif; mso-line-height-rule: exactly;">
+						<div class="editable-text">
+							<span class="text_container">&copy; 2021 All rights Reserved - theostrich</span>
+						</div>
+					</td>
+				</tr>
+			</table><!-- END container -->
+		</td>
+	</tr>
+	<!-- padding-bottom -->
+	<tr><td height="30"></td></tr>
+</table><!-- END wrapper -->
+
+</body>
