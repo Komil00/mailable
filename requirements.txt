@@ -1,0 +1,8 @@
+constants==0.6.0
+dnspython
+Flask
+pymongo
+pyromod
+Markdown
+Pyrogram
+TgCrypto
